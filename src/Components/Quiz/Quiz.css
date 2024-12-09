@@ -1,0 +1,136 @@
+.container {
+    width: 90%; /* Default to take up most of the screen width */
+    max-width: 640px; /* Limit the maximum width */
+    margin: auto;
+    margin-top: 100px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 30px 20px; /* Reduced padding for smaller screens */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.container hr {
+    height: 2px;
+    border: none;
+    background: #707070;
+}
+
+.container h2 {
+    font-size: 24px; /* Adjusted font size for better scaling */
+    font-weight: 500;
+    text-align: center;
+}
+
+.container ul {
+    padding: 0;
+    list-style: none;
+}
+
+.container ul li {
+    display: flex;
+    align-items: center;
+    height: 60px; /* Reduced height for better spacing on smaller screens */
+    padding-left: 15px;
+    border: 1px solid #686868;
+    border-radius: 8px;
+    margin-bottom: 15px; /* Reduced margin */
+    font-size: 18px; /* Adjusted font size */
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.container ul li:hover {
+    transform: scale(1.03);
+}
+
+.container button {
+    margin: auto;
+    width: 200px; /* Reduced button width for smaller screens */
+    height: 55px; /* Adjusted button height */
+    background: #553f9a;
+    color: #fff;
+    font-size: 20px; /* Adjusted font size */
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.container button:hover {
+    background: #4caf50;
+}
+
+.container .index {
+    margin: auto;
+    font-size: 16px;
+}
+
+.container .correct {
+    background: #dffff2;
+    border-color: #00d397;
+}
+
+.container .wrong {
+    background: #ffebeb;
+    border-color: #ff4a4a;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For small devices (phones) */
+@media (max-width: 768px) {
+    .container {
+        margin-top: 50px;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .container h2 {
+        font-size: 20px;
+    }
+
+    .container ul li {
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .container button {
+        width: 150px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .container .index {
+        font-size: 14px;
+    }
+}
+
+/* For very small devices (extra small phones) */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .container h2 {
+        font-size: 18px;
+    }
+
+    .container ul li {
+        font-size: 14px;
+        height: 45px;
+    }
+
+    .container button {
+        width: 120px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .container .index {
+        font-size: 12px;
+    }
+}
